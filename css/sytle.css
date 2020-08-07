@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.icon{
+    width: 80px;
+    
+}
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+}
+nav .fa-bars{
+    color: #fff !important;
+    font-size: 26px;
+}
+/* welcome section */
+.welcome{
+    padding: 50px 100px;
+    margin-top: -140px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+/* services  */
+#services{
+    background-color: #efefef;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+ /* TRAINER DETAILS */
+#trainerDetails{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../image/backgg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+#gallery{
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+
+#contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgba(117, 197, 243, 0.8),rgba(114, 210, 248, 0.678)),url(../image/Screenshot\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.form{ 
+    padding: 30px;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+    
+}
+.form h3{
+    
+    letter-spacing: 3px;
+}
+.form-items .input{
+    width: 100%;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px 50px;
+    box-sizing: border-box;
+
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    background-color:white ;
+}
+.btn-submit{
+   border: none;
+   border-radius: 20px;
+   padding:10px 50px;
+   display: block;
+   margin: auto;
+}

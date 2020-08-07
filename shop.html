@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <link rel="stylesheet" href="./css/shop.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./font/css/all.min.css" />
+  </head>
+  <body>
+    <!-- navbar section  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">GymSHOP</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              data-toggle="modal"
+              data-target="#creataccount"
+              href="#"
+              >Create Account
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="modal"
+              data-target="#login"
+              href="#"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Start popup  Create account section -->
+
+    <div
+      class="modal fade"
+      data-keybord="false"
+      data-backdrop="static"
+      id="creataccount"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title text-center w-100">Create Account</h4>
+
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <h5 id="success" style="color: green;" class="text-center"></h5>
+            <div class="mb-3">
+              <div class="py-2 text-center">
+                <a href="#"
+                  ><i class="fab fa-facebook fa-2x text-primary mx-2"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-google-plus fa-2x text-danger mx-2"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter fa-2x text-info mx-2"></i
+                ></a>
+              </div>
+              <form id="form">
+                <p id="f" class="erorr-color"></p>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="email"
+                  placeholder="Email or Phone Num"
+                />
+
+                <div class="mb-3">
+                  <p id="g" class="erorr-color"></p>
+                  <input
+                    type="password"
+                    class="input-field"
+                    id="passwordF"
+                    placeholder="password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <p id="p" class="erorr-color"></p>
+                  <input
+                    type="password"
+                    class="input-field"
+                    id="passwordre"
+                    placeholder="Re Enter password"
+                  />
+                </div>
+                <button class="submit-btn">Create</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End popup  Create account section -->
+
+    <!-- Start popup Login section  -->
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title text-center w-100">Login</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-from mb-3">
+              <div class="py-2 text-center">
+                <a href="#"
+                  ><i class="fab fa-facebook fa-2x text-primary mx-2"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-google-plus fa-2x text-danger mx-2"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter fa-2x text-info mx-2"></i
+                ></a>
+              </div>
+
+              <input type="text" class="input-field" placeholder="User Id" />
+            </div>
+            <div class="md-from mb-3">
+              <input
+                type="password"
+                class="input-field"
+                placeholder="password"
+              />
+              <div class="md-from mt-2">
+                <button type="submit" class="submit-btn">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End navbar section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="image/shopig-1.png" class="img-fluid imageChange" alt="" />
+          <button onclick="change(this);" class="shop_img">
+            <img src="image/shopimg1.png" class="img-fluid mt-2" alt="" />
+          </button>
+          <button onclick="change(this);" class="shop_img">
+            <img src="image/shopimg2.png" class="img-fluid mt-2" alt="" />
+          </button>
+          <button onclick="change(this);" class="shop_img">
+            <img src="image/shopimg3.png" class="img-fluid mt-2" alt="" />
+          </button>
+          <button onclick="change(this);" class="shop_img">
+            <img src="image/shopimg4.png" class="img-fluid mt-2" alt="" />
+          </button>
+        </div>
+        <div class="col-md-6">
+          <h3>BLACK & WHITE UNBREAKABLE HAT</h3>
+          <p>$32.00</p>
+          <p>
+            Dad hats are not just for dad – this classic dad hat is trendy and
+            stylish. It has an unstructured form , a curved visor, and an
+            adjustable buckle strap. Comfort + style = win/win!
+          </p>
+          <ul>
+            <li>100% chino cotton twill</li>
+            <li>Unstructured, 6-panel, low-profile</li>
+            <li>6 embroidered eyelets</li>
+            <li>3 ⅛” crown</li>
+            <li>Adjustable strap with antique buckle</li>
+            <li>Head circumference: 20 ½” - 21 ⅝”</li>
+            <li>One size fits most</li>
+          </ul>
+          <select name="" id="">
+            <option value="">Qty</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+          <button class="btncolor">Shop</button>
+          <button class="btncolor">Cart</button>
+        </div>
+      </div>
+      <div class="com_space">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="image/shopimg5.png"
+              class="img-fluid imageChangetshirt"
+              alt=""
+            />
+            <button onclick="changeTshirt(this);" class="shop_img">
+              <img src="image/shopimg5.png" class="img-fluid mt-2" alt="" />
+            </button>
+            <button onclick="changeTshirt(this);" class="shop_img">
+              <img src="image/shopimg6.png" class="img-fluid mt-2" alt="" />
+            </button>
+            <button onclick="changeTshirt(this);" class="shop_img">
+              <img src="image/shopimg7.png" class="img-fluid mt-2" alt="" />
+            </button>
+          </div>
+          <div class="col-md-6">
+            <h3>ARE YOU UNBREAKABLE?</h3>
+            <p>$30.00</p>
+            <p>
+              A crowd favorite, this ultra-soft cotton/poly blend t-shirt feels
+              breathable and light, with just the right amount of stretch. It's
+              comfortable and the unisex cut is flattering for both men and
+              women. This shirt also features a tear-away tag for maximum
+              comfort!
+            </p>
+            <select name="" id="">
+              <option value="">Qty</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+            <button class="btncolor">Shop</button>
+            <button class="btncolor">Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="com_space">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="image/shopimg13.png"
+              class="img-fluid imageChangejoggers"
+              alt=""
+            />
+            <button onclick="changejoggers(this);" class="shop_img">
+              <img src="image/shopimg13.png" class="img-fluid mt-2" alt="" />
+            </button>
+            <button onclick="changejoggers(this);" class="shop_img">
+              <img src="image/shopimg11.png" class="img-fluid mt-2" alt="" />
+            </button>
+            <button onclick="changejoggers(this);" class="shop_img">
+              <img src="image/shopimg12.png" class="img-fluid mt-2" alt="" />
+            </button>
+          </div>
+          <div class="col-md-6">
+            <h3>UNBREAKABLE JOGGERS</h3>
+            <p id="chainge_price">$49.99</p>
+            <p>
+              These comfortable and stylish joggers are perfect for pre/post
+              workout flex , running to the store, or an effortless stay-at-home
+              outfit.
+            </p>
+            <select name="qty" id=" ">
+              <option value="">Qty</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button class="btncolor">Shop</button>
+            <button class="btncolor">Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/shop.js"></script>
+  </body>
+</html>
